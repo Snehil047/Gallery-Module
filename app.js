@@ -6,6 +6,7 @@ let img = document.getElementById("1stImg");
 scrollContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
   scrollContainer.scrollLeft += evt.deltaY;
+  scrollContainer.style.scrollBehavior = "auto";
 });
 
 nextBtn.addEventListener("click", () => {
